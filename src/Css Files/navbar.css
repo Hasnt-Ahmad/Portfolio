@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.7s;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+.black{
+    background-color: #263688!important;
+}
+nav ul li{
+    list-style: none;
+    width: 125px;
+}
+nav ul{
+    display: flex;
+    margin-right:560px;
+    margin-top: 20px;
+}
+nav ul li a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+    width: 500px !important;
+}
+nav h1{
+    margin-left: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+nav img{
+    padding-top: 10px;
+    margin-left: 100px;
+    width:110px;
+    height:90px;
+}
+.topmenumobile {
+    display: none;
+}
+
+.active{
+    display: none !important;
+}
+.menuul {
+    display: flex !important;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	.topmenumobile {
+		display: block;
+        margin-top: 20px;
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+        color: white;
+        font-size: 30px;
+
+	}
+    nav{
+        width: 100%;
+    }
+
+	.menuul {
+        display: none !important;
+    }
+	nav img{
+        margin-left: 0px;
+        padding-top: 20px;
+        margin-left: 30px;
+        width:110px;
+        height:80px;
+    }
+    .active{
+        display: block !important;
+        top: 80px;
+        position: absolute;
+        width: 100%;
+        background-color: #263688!important;
+        text-align: center !important;
+        height: 320px;
+        margin: 0px !important;
+
+    }
+    nav ul li {
+       padding: 20px !important;
+       margin-left: 35%;
+    }
+    nav ul li a{
+        color: white;
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    nav img{
+        width:80px;
+        height:70px;
+        margin-left: 10px;
+    }
+
+
+}

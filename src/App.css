@@ -1,38 +1,421 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+.bg{
+  background:  url('./Images/Pic111.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  background-size: 100%;
+}
+.bg p{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  margin-left: 50px;
+  top: 250px;
+  font-family:Artysignature;
+}
+.bg .title{
+  color:white;
+  font-size: 70px;
+  position: relative;
+  top: 210px;
+  left:35px;
+  font-weight: bold;
+}
+.div{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Intro{
+  background-color: rgba(248,28,71,.1);
+}
+.Intro-p{
+  text-align: center;
+  font-size: 18px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(128, 128, 128);
+  height: 120px;
+}
+.profile-intro ul{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  padding-left: 80px;
+}
+.profile-intro ul li{
+  list-style: none;
+}
+.profile-intro ul li{
+  color:rgb(128, 128, 128);
+  border-bottom: 1px dotted;
+  margin: 4px 0px 5px 0;
+}
+.profile-intro ul li label{
+  color:#263688!important;
+  min-width: 80px;
+  font-weight:bold; 
+  font-family: Nunito;
+}
+.profile-intro ul li span a{
+  text-decoration: none !important;
+  color:rgb(128, 128, 128) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.AboutMe-p{
+  margin-top: 40px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Nunito;
+  font-weight: bold;
+  color:#263688!important;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile div{
+  border:  10px solid #f64266;
+  width: 90%;
+  margin-left: 60px;
+}
+.profile img{
+  width: 90%;
+  height: 550px;
+  margin-left: 18px;
+  padding: 20px 0px 20px 0px;
+}
+.profile-intro h4{
+  font-size: 24px;
+  padding-left: 40px;
+  font-weight: 500;
+  color:#263688!important;
+  font-family: Nunito;
+}
+.profile-intro p{
+  padding-left: 40px;
+  color: rgb(128, 128, 128); 
+}
+.profile-intro p span{
+  color: #f64266;
+  font-weight: bold;
+  
+}
+.Skills{
+  background-color: #f0f8f9;
+}
+.About-Skills{
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  font-family: Nunito;
+  font-weight: bold;
+  color:#263688!important;
+}
+.Skills-Intro{
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(128, 128, 128); 
+}
+.Skills-Intro span{
+  color:#f64266;
+  font-weight: bold; 
+}
+
+
+
+
+.container{
   display: flex;
+  padding: 50px 0;
+  border-radius: 8px;
+  
+  row-gap: 30px;
   flex-direction: column;
   align-items: center;
+}
+.circular-progress{
+  position: relative;
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  background: conic-gradient(red 3.6deg,white 0deg);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  background-color: #f0f8f9;
+}
+.progress-value{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: red
+}
+
+.skillsbar p{
+  text-align: center;
+  padding: 0px  !important;
+  margin: 0px !important;
+  font-size: 24px;
+  font-weight: bold;
+  color:#263688!important;
+  font-family: Nunito;
+  
+}
+.WhatDo{
+  background-color: rgb(248, 248, 248);
+}
+.What h4,.What p{
+  text-align: center;
+}
+.What h4{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  color:#263688!important;
+}
+.What p{
+  margin-top: 20px;
+  color: rgb(128, 128, 128); 
+  text-indent: 10px;
+  margin-left: 15px;
+  padding: 5px;
+  font-size:15px;
+}
+p.indent{
+  text-indent: -20px;
+}
+.indent{
+  padding-left:20px !important;
+  padding-right: 20px !important;
+}
+.DoCol{
+  margin-bottom: 40px;
+  width: 90%;
+  background-color: white;
+  height: 350px;
+  border: 3px solid white;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+  transition: transform 0.5s ease;
+}
+.DoCol:hover{
+  transform:  translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+}
+
+.Contact-Me form div {
+  display: flex;
+  justify-content: space-between;
+
+}
+input{
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: rgb(250, 250, 250);
+  padding-left: 10px;
+  outline: none;
+
+}
+input:focus{
+  border: 2px solid #263688!important;
+}
+textarea{
+  width: 100%;
+  height: 200px;
+  border: none;
+  background-color: rgb(250, 250, 250);
+  padding-left: 10px;
+  padding-top: 10px;
+  outline: none;
+}
+textarea:focus{
+  border: 2px solid #263688!important;
+}
+.Contact-Me form button{
+  padding: 10px;
+  width: 200px;
+  border: none;
+  background-color: #263688;
+  color: white;
+  font-weight:550;
+  font-family: Nunito;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+.contact h4{
+  color:#263688;
+}
+.contact p{
+  color: rgb(128, 128, 128); 
+}
+.contact{
+ width: 100%;
+}
+.footer{
+  text-align: center;
+}
+.footer p{
+  color:#263688;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+}
+.fb{
+  color:#3b5998 !important;
+}
+.insta{
+  color: white;
+  background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+  width: 65px;
+  margin-right: 40px;
+  border-radius: 300px;
+  padding-left:2px
+}
+.insta:hover{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.linkedin{
+  color:#0a66c2 !important;
+}
+.github{
+  color:var(--color-fg-subtle) !important;
+}
+.socialIcons{
+  font-size: 60px;
+  margin-right: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media screen and (max-width: 768px) {
+  
+  .Intro-p{
+  font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  .profile-intro h4{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    width: 150%;
+  }
+  .profile div{
+    border:  10px solid #f64266;
+    width: 80%;
+    margin-left: 0px;
+  }
+  .profile img{
+    width: 90%;
+  }
+  .Contact-Me form div {
+    display: block;
+    padding-left: 10px;
+  
+  }
+  input{
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+  }
+  textarea{
+    margin-left: 10px !important;
+    width: 90%;
+  }
+  .bg .title{
+    font-size: 50px;
+    left:25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  .Intro-p{
+  font-size: 15px;
+  }
+  .profile div{
+    width: 70%;
+    margin-left: 40px;
+  }
+  .profile img{
+    height: 90%;
+  }
+  .profile-intro p{
+    padding-left: 20px;
+    width: 160% !important;
+  }
+  .profile-intro ul{
+    padding-left: 20px;
+  }
+  .profile-intro ul li span{
+    font-size: 14px;
+  }
+  
+  .profile-intro ul li label{
+    min-width: 50px;
+  }
+  .socialIcons{
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .insta{
+    width: 32px;
+  margin-right: 20px;
+  }
+  .bg .title{
+    font-size: 40px;
+    left:25px;
+  }
+  .bg p{
+    color: white;
+    font-size: 24px;
+    margin-left: 50px;
+    top: 240px;
+  }
+  .bg{
+    height: 700px;
+    background-size: 110%;
+
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  
+  
+  .profile-intro ul li span{
+    font-size: 12px;
+  }
+  .Intro-p{
+    font-size: 13px;
+    }
+    .profile-intro p{
+      font-size: 13px;
+    }
+   .What p{
+    font-size:12.5px;
+  }
+  .bg .title{
+    font-size: 34px;
+    left:15px;
+  }
+  .bg p{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    top: 240px;
+  }
+  .bg{
+    height: 650px;
+    background-size: 130%;
+    background-position: 60% 0% ;
+
   }
 }
